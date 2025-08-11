@@ -13,20 +13,20 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink
-          to="/appointment"
+          to="/about"
           className={({ isActive }) => (isActive ? "text-[#0EA106] font-bold m-2" : "m-2")}
         >
-          <li>My-Bookings</li>
+          <li>About</li>
         </NavLink>
 
         <NavLink
-          to="/blogs"
+          to="/services"
           className={({ isActive }) => (isActive ? "text-[#0EA106] font-bold m-2" : "m-2")}
         >
-          <li>Blogs</li>
+          <li>Services</li>
         </NavLink>
         <NavLink className={({ isActive }) => (isActive ? "text-[#0EA106] font-bold m-2" : "m-2")} 
-        to="/contact"> <li >Contact Us</li></NavLink>
+        to="/contact"> <li >Contact</li></NavLink>
   </>
     return (
             <div className="shadow-sm">
