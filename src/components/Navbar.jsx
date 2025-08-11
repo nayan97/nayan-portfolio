@@ -1,40 +1,67 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-scroll";
-import { FaSun, FaMoon } from "react-icons/fa";
+import React from 'react';
+import { NavLink } from 'react-router';
 
-export default function Navbar() {
-  const [darkMode, setDarkMode] = useState(false);
 
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [darkMode]);
+const Navbar = () => {
+  const links = <>
+    
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "text-[#0EA106] font-bold m-2" : "m-2")}
+        >
+          <li>Home</li>
+        </NavLink>
 
-  return (
-    <nav className="bg-gray-900 text-white px-6 py-4 flex justify-between items-center fixed w-full z-50 shadow-lg">
-      <h1 className="text-2xl font-bold">Nayan Islam</h1>
-      <ul className="flex gap-6 items-center">
-        {["about", "projects", "contact"].map((section, i) => (
-          <li key={i}>
-            <Link
-              to={section}
-              smooth={true}
-              duration={500}
-              className="cursor-pointer hover:text-blue-400"
-            >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
-            </Link>
-          </li>
-        ))}
-        <li>
-          <button onClick={() => setDarkMode(!darkMode)}>
-            {darkMode ? <FaSun /> : <FaMoon />}
-          </button>
-        </li>
-      </ul>
-    </nav>
-  );
-}
+        <NavLink
+          to="/appointment"
+          className={({ isActive }) => (isActive ? "text-[#0EA106] font-bold m-2" : "m-2")}
+        >
+          <li>My-Bookings</li>
+        </NavLink>
+
+        <NavLink
+          to="/blogs"
+          className={({ isActive }) => (isActive ? "text-[#0EA106] font-bold m-2" : "m-2")}
+        >
+          <li>Blogs</li>
+        </NavLink>
+        <NavLink to="/contact"> <li className='m-2'>Contact Us</li></NavLink>
+  </>
+    return (
+            <div className="shadow-sm">
+               <div className='max-w-[1280px] mx-auto bg-base-100'>
+                  <div className="navbar">
+                    <div className="navbar-start">
+                      <div className="dropdown">
+                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                        </div>
+                        <ul
+                          tabIndex={0}
+                          className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            {
+                              links
+                            }
+                  
+                        </ul>
+                      </div>
+                      <a className="btn btn-ghost text-2xl"><span><img className='w-8' src="" alt="" /></span>Law.BD</a>
+                    </div>
+                    <div className="navbar-center hidden lg:flex">
+                      <ul className="menu menu-horizontal px-1 font-medium text-lg">
+                        {
+                          links
+                        }
+                      </ul>
+                    </div>
+                    <div className="navbar-end">
+                      <a className="btn bg-[#0EA106] text-white rounded-3xl">Contact Now</a>
+                    </div>
+                   </div>
+                      
+              </div>
+            </div>
+    );
+};
+
+export default Navbar;
