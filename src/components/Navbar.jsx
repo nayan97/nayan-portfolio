@@ -25,7 +25,8 @@ const Navbar = () => {
         >
           <li>Blogs</li>
         </NavLink>
-        <NavLink to="/contact"> <li className='m-2'>Contact Us</li></NavLink>
+        <NavLink className={({ isActive }) => (isActive ? "text-[#0EA106] font-bold m-2" : "m-2")} 
+        to="/contact"> <li >Contact Us</li></NavLink>
   </>
     return (
             <div className="shadow-sm">
@@ -45,7 +46,7 @@ const Navbar = () => {
                   
                         </ul>
                       </div>
-                      <a className="btn btn-ghost text-2xl"><span><img className='w-8' src="" alt="" /></span>Law.BD</a>
+                      <a className="text-2xl text-start"><span><img className='w-8' src="" alt="" /></span>Law.BD</a>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                       <ul className="menu menu-horizontal px-1 font-medium text-lg">
@@ -55,7 +56,7 @@ const Navbar = () => {
                       </ul>
                     </div>
                     <div className="navbar-end">
-                      <a className="btn bg-[#0EA106] text-white rounded-3xl">Contact Now</a>
+                      <a className="btn bg-[#0EA106] text-white rounded-3xl mr-[-20px]">Contact Now</a>
                     </div>
                    </div>
                       
