@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar'
-
+import Footer from '../components/Footer'
 import { Outlet, useNavigation } from 'react-router';
 import Spinner from "../components/Spinner/Spinner";
 const Layout = () => {
@@ -12,6 +12,7 @@ const Layout = () => {
               <Navbar></Navbar>
               {isLoading && <Spinner />}
               <Outlet></Outlet>
+              <Footer></Footer>
              
            </div>
             
