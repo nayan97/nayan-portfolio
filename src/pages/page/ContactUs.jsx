@@ -1,12 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope,} from "react-icons/fa";
+import Contact from "../../components/Contact";
 
 const ContactUs = () => {
   return (
-    <div className="pt-6">
+    <div className="bg-[#112e42] py-6 text-white">
       <motion.div
-        className="max-w-7xl mx-auto py-10 px-6 bg-base-100 rounded-2xl shadow-lg pt-6"
+        className="max-w-7xl mx-auto py-10 px-6 bg-[#081b29] rounded-2xl shadow-lg pt-6"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -21,39 +22,18 @@ const ContactUs = () => {
         </motion.h1>
 
         {/* Contact Info */}
-        <motion.div
-          className="grid md:grid-cols-3 gap-8 mb-8"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-        >
-          <div className="flex flex-col items-center text-center">
-            <FaPhoneAlt className="text-green-600 text-3xl mb-2" />
-            <p className="font-semibold">Phone</p>
-            <p className="text-gray-500">+880  1750 639637</p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <FaEnvelope className="text-green-600 text-3xl mb-2" />
-            <p className="font-semibold">Email</p>
-            <p className="text-gray-500">nayanislam085@gamil.com</p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <FaMapMarkerAlt className="text-green-600 text-3xl mb-2" />
-            <p className="font-semibold">Address</p>
-            <p className="text-gray-500">Dhaka, Bangladesh</p>
-          </div>
-        </motion.div>
+       <Contact></Contact>
 
         {/* Contact Form */}
         <motion.div
-          className="grid md:grid-cols-2 shadow-lg rounded-2xl"
+          className="grid md:grid-cols-2 shadow-lg rounded-2xl bg-[#112e42]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
         >
           {/* Left Side Image */}
           <motion.div
-            className="bg-cover object-cover"
+          className="bg-cover object-cover rounded-l-xl"
             style={{
               backgroundImage:
                 "url('https://i.ibb.co.com/XxP5NtCt/gettyimages-1312953631-612x612.jpg')",
@@ -65,7 +45,7 @@ const ContactUs = () => {
 
           {/* Right Side Form */}
           <motion.div
-            className="flex flex-col justify-center px-8 py-12 bg-base-100"
+            className="flex flex-col justify-center px-8 py-12"
             initial={{ x: 50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
@@ -83,7 +63,7 @@ const ContactUs = () => {
             </div>
             <div className="flex items-center gap-3 mb-6">
               <FaPhoneAlt className="text-green-600 text-lg" />
-              <span>+880  1750639637</span>
+              <span>+880 1750639637</span>
             </div>
 
             {/* Form */}

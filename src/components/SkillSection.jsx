@@ -46,7 +46,7 @@ const SkillSection = ({ title, items }) => (
       {items.map((skill, index) => (
         <div
           key={index}
-          className="bg-base-100 rounded-xl p-4 flex flex-col items-center justify-center shadow hover:shadow-lg transition"
+          className="bg-[#112e42] rounded-xl p-4 flex flex-col items-center justify-center shadow hover:shadow-lg transition"
         >
           <img src={skill.icon} alt={skill.name} className="w-12 h-12 mb-2" />
           <p className="text-sm font-semibold">{skill.name}</p>

@@ -4,7 +4,7 @@ import Spinner from "../components/Spinner/Spinner";
 import Home from "../pages/Home/Home";
 import Services from "../pages/page/Services";
 import ContactUs from "../pages/page/ContactUs";
-import About from "../pages/page/About";
+import AboutUs from "../pages/page/AboutUs";
 
 import { createBrowserRouter } from "react-router";
 
@@ -15,19 +15,19 @@ export const router = createBrowserRouter([
     hydrateFallbackElement: <Spinner />,
     children: [
       {
-        //   loader: ()=>fetch('../bd.json'),
+      
         path: "/",
         element: <Home></Home>,
       },
       {
         path: "services",
-        // loader: ()=>fetch('../blog.json'),
+       
         element: <Services></Services>,
       },
       {
         path: "about",
         // loader: ()=>fetch('../blog.json'),
-        element: <About></About>,
+        element: <AboutUs></AboutUs>,
       },
       {
         path: "contact",

@@ -1,0 +1,135 @@
+Semantic Tags
+ Q: What are semantic tags in HTML?
+ A: Semantic tags clearly describe their meaning in a human- and machine-readable way. Examples
+ include , , , and .
+ Q: Why are semantic tags important?
+ A: They improve accessibility, SEO, and code readability by giving meaning to web page structure.
+ Q: Give an example of a semantic tag and its use.
+ A: The tag can be used to define independent content such as a blog post or news article.
+ Q: How do semantic tags help in SEO?
+ A: Search engines use them to better understand the content and improve ranking in search
+ results.
+ Attributes
+ Q: What are attributes in HTML?
+ A: Attributes provide additional information about HTML elements, usually in name-value pairs
+ inside the start tag.
+ Q: Give an example of an attribute.
+ A: In an image tag: <img src="image.jpg" alt="Description">, src and alt are attributes.
+ Q: Are attributes case-sensitive?
+ A: In HTML, attributes are not case-sensitive, but lowercase is recommended.
+ Q: What is the difference between global and specific attributes?
+ A: Global attributes can be applied to any HTML element (e.g., id, class), while specific attributes
+ are only valid for certain tags (e.g., src for img).
+ HTML Elements
+ Q: What is an HTML element?
+ A: An HTML element consists of a start tag, content, and an end tag (e.g., <p>This is a
+ paragraph</p>).
+ Q: What is the difference between block-level and inline elements?
+ A: Block-level elements take up the full width available (e.g., <div>, <p>), while inline elements only
+ take up as much space as needed (e.g., <span>, <a>).
+ Q: What are empty elements in HTML?
+ A: Empty elements do not have any content or closing tag, e.g., <br>, <img>.
+ Q: What is the root HTML element?
+ A: The <html> element is the root element that contains all other elements on the page.
+ Forms and Inputs
+ Q: What is the purpose of forms in HTML?
+ A: Forms are used to collect user input and send it to a server for processing.
+Q: What are some common form input types?
+ A: text, password, email, number, date, radio, checkbox, file, submit.
+ Q: What is the difference between GET and POST methods in forms?
+ A: GET appends data to the URL, while POST sends data in the request body.
+ Q: What attribute is used to define where the form data is sent?
+ A: The action attribute specifies the URL where form data will be submitted.
+ Media
+ Q: What HTML tags are used for adding media?
+ A: For images: <img>, for video: <video>, for audio: <audio>.
+ Q: How do you embed a video in HTML?
+ A: Use the <video> tag with the src attribute, e.g., <video src="movie.mp4" controls></video>.
+ Q: What is the purpose of the controls attribute in media elements?
+ A: It provides playback controls like play, pause, and volume adjustment.
+ Q: How can you make media files accessible?
+ A: By adding captions, transcripts, and alt text for better accessibility.
+
+
+ DOM Manipulation
+ Q1: What is DOM Manipulation?
+ A: DOM Manipulation is the process of dynamically changing the content, structure, and style of a
+ webpage using JavaScript.
+ Q2: How do you select an element by ID in JavaScript?
+ A: You can use document.getElementById('id') to select an element by its ID.
+ Q3: What is the difference between innerHTML and textContent?
+ A: innerHTML returns HTML content including tags, while textContent returns only the text without
+ HTML tags.
+ Q4: How do you create a new element in DOM?
+ A: Use document.createElement('tagName') to create a new element.
+ Q5: How do you remove an element from DOM?
+ A: Use element.remove() or element.parentNode.removeChild(element) to remove an element.
+ Control Flow
+ Q1: What is Control Flow in programming?
+ A: Control Flow determines the order in which individual statements, instructions, or function calls
+ are executed or evaluated.
+ Q2: What is the difference between if-else and switch statements?
+ A: if-else is used for conditional branching with boolean expressions, while switch is used for
+ multiple cases based on a single value.
+ Q3: What is a loop in JavaScript?
+ A: A loop is a control structure that repeats a block of code until a specified condition is met.
+ Q4: What are the types of loops in JavaScript?
+ A: for, while, do-while, and for...in / for...of loops.
+ Q5: How does break differ from continue in loops?
+ A: break exits the loop entirely, while continue skips the current iteration and moves to the next one.
+ ES6 Features
+ Q1: What are ES6 Features?
+A: ES6 (ECMAScript 2015) introduced new syntax and features to make JavaScript more powerful
+ and easier to write.
+ Q2: What is the difference between var, let, and const?
+ A: var is function-scoped, let and const are block-scoped, and const cannot be reassigned.
+ Q3: What are arrow functions?
+ A: Arrow functions provide a shorter syntax for writing functions and lexically bind the 'this' keyword.
+ Q4: What are template literals?
+ A: Template literals allow embedded expressions and multi-line strings using backticks (`) instead
+ of quotes.
+ Q5: What are default parameters?
+ A: Default parameters allow you to set default values for function arguments if no value or
+ undefined is passed.
+ Q6: What is destructuring?
+ A: Destructuring is a way to unpack values from arrays or properties from objects into variables.
+ Q7: What are promises?
+ A: Promises represent the eventual completion (or failure) of an asynchronous operation and its
+ resulting value.
+ Q8: What are modules in ES6?
+ A: Modules allow you to split your code into separate files and export/import them when needed.
+ APIs
+ Q1: What is an API?
+ A: An API (Application Programming Interface) is a set of rules and tools for building software and
+ allowing applications to communicate with each other.
+ Q2: What is the difference between REST API and SOAP API?
+ A: REST uses HTTP and JSON/XML with stateless communication, while SOAP uses XML and is
+ more rigid with strict standards.
+ Q3: What is Fetch API in JavaScript?
+ A: The Fetch API provides a modern way to make HTTP requests, returning promises.
+ Q4: What is the difference between Fetch API and XMLHttpRequest?
+A: Fetch API is promise-based and cleaner to use, while XMLHttpRequest uses callbacks and is
+ older.
+ Q5: What is JSON?
+ A: JSON (JavaScript Object Notation) is a lightweight data format used for storing and exchanging
+ data.
+ Q6: How do you handle errors in Fetch API?
+ A: Use .catch() with promises or try...catch with async/await to handle errors.
+ Q7: What is an API key?
+ A: An API key is a unique identifier used to authenticate requests to an API.
+ Command Used:
+diskpart
+list disk
+select disk 0
+list partition
+select partition 1
+assign letter=z
+exit
+z:
+dir
+cd efi
+dir
+rd ubuntu /s
+y
+dir
+exit

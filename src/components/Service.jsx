@@ -4,26 +4,26 @@ import { motion } from "framer-motion";
 
 const stacks = [
   {
-    name: "Full Stack",
-    image: "https://i.ibb.co/Qp1SXBw/fullstack.png",
+    name: "Full Stack Development",
+    image: "https://i.ibb.co.com/kgxsZh6C/images-4.png",
     description:
       "Complete development service covering both front-end and back-end technologies.",
   },
   {
-    name: "Frontend",
-    image: "https://i.ibb.co/4mZy3kN/frontend.png",
+    name: "Frontend Development",
+    image: "https://i.ibb.co.com/kgxsZh6C/images-4.png",
     description:
       "Crafting responsive, interactive, and visually appealing user interfaces.",
   },
   {
-    name: "Laravel",
-    image: "https://i.ibb.co/9yNYLL6/laravel.png",
+    name: "Laravel Development",
+    image: "https://i.ibb.co.com/kgxsZh6C/images-4.png",
     description:
       "Powerful PHP framework for building secure and scalable web applications.",
   },
   {
-    name: "Node",
-    image: "https://i.ibb.co/mFd8BPh/node.png",
+    name: "MERN Development",
+    image: "https://i.ibb.co.com/kgxsZh6C/images-4.png",
     description:
       "Fast, scalable, and efficient server-side applications using JavaScript.",
   },
@@ -32,7 +32,7 @@ const stacks = [
 
 const Service = () => {
 return (
-  <section className="py-10 bg-base-100">
+  <section className="py-10 bg-[#112e42] text-white">
     <div className="max-w-7xl mx-auto px-4">
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8">
         My Specialization
@@ -45,7 +45,7 @@ return (
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
       >
         {stacks.map((attraction, index) => (
-          <div key={index} className="card bg-base-200 shadow-xl">
+          <div key={index} className="card bg-[#081b29] shadow-xl">
             <figure>
               <img
                 src={attraction.image}

@@ -100,12 +100,12 @@ const MySkills = () => {
     ],
   };
   return (
-    <div className="bg-base-200 pb-10">
+    <div className="bg-[#112e42] text-white pb-10">
       <div className="max-w-7xl mx-auto px-4">
         <Slider {...settings}>
           {skills.map((skill, index) => (
             <div key={index} className="p-3">
-              <div className="card bg-base-100 shadow-xl h-full flex flex-col items-center text-center">
+              <div className="card bg-[#081b29] shadow-xl h-full flex flex-col items-center text-center">
                 <figure className="p-6">
                   <img
                     src={skill.icon}

@@ -29,8 +29,8 @@ const Navbar = () => {
         to="/contact"> <li >Contact</li></NavLink>
   </>
     return (
-            <div className="shadow-sm">
-               <div className='max-w-[1280px] mx-auto bg-base-100'>
+            <div className="shadow-sm bg-[#081b29] text-white">
+               <div className='max-w-[1280px] mx-auto'>
                   <div className="navbar">
                     <div className="navbar-start">
                       <div className="dropdown">
@@ -46,9 +46,9 @@ const Navbar = () => {
                   
                         </ul>
                       </div>
-                      <a className="text-2xl text-start"><span><img className='w-8' src="" alt="" /></span>Law.BD</a>
+                      <a className="text-2xl text-start font-semibold"><span><img className='w-8' src="" alt="" /></span>Nayan Islam</a>
                     </div>
-                    <div className="navbar-center hidden lg:flex">
+                    <div className="navbar-center hidden lg:flex bg-[#112e42] rounded-full px-6">
                       <ul className="menu menu-horizontal px-1 font-medium text-lg">
                         {
                           links
@@ -56,7 +56,8 @@ const Navbar = () => {
                       </ul>
                     </div>
                     <div className="navbar-end">
-                      <a className="btn bg-[#0EA106] text-white rounded-3xl mr-[-20px]">Contact Now</a>
+                      <a 
+                      className="bg-green-400 px-5 py-2 rounded-full font-semibold hover:bg-green-300 transition">Resume</a>
                     </div>
                    </div>
                       
